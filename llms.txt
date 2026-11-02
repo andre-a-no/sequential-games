@@ -1,0 +1,23 @@
+# sequential-games
+
+> Pure models and reference algorithms for asynchronous stochastic interaction with explicit participant state and observations.
+
+## Understand the library
+
+- [Plain-language overview](docs/overview.md): use cases, inputs/outputs, FAQ and current limits.
+- [Обзор на русском](docs/overview.ru.md): применение, входы и выходы, частые вопросы и текущие ограничения.
+- [README](README.md): supported API and the shared-resource example.
+- [Model semantics](docs/ADR-001-explicit-state-reference-simulation.md): purity, time, observations, random inputs and continuation.
+- [Package manifest](pyproject.toml): installation and Python requirements.
+
+## Inspect behavior
+
+- [Contracts](src/sequential_games/contracts.py): model/policy state and intentions.
+- [Reference computation](src/sequential_games/simulation.py): explicit virtual-time state transitions.
+- [Shared resource](examples/shared_resource.py): separate goals, waiting and conflict.
+- [Simulation tests](tests/test_simulation.py): behavioral evidence and boundary cases.
+
+## Work on the repository
+
+- [Agent guide](AGENTS.md): source map and development checks.
+- [License](LICENSE): AGPL-3.0-only.
